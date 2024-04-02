@@ -26,7 +26,7 @@ const Header = () => {
         />
         </button></a>
         </div>
-        <div className=" gap-12 justify-between items-start mt-5 text-base text-white whitespace-nowra md:flex hidden">
+        <div className=" gap-5 justify-between items-start mt-5 text-base text-white whitespace-nowra md:flex hidden">
           
           <a href="/home" className="cursor-pointer hover:text-white hover:font-bold">Home</a>
 
@@ -73,7 +73,7 @@ const Header = () => {
               />
             </div>
             {showLaunchpadMenu && (
-              <div className="absolute z-10 mt-2 w-32 bg-black  shadow-lg border  border-lime-400 justify-normal right-0">
+              <div className="absolute z-10 mt-2 w-24 bg-black  shadow-lg border  border-lime-400 justify-normal right-0">
                 
                 <div className="py-1">
                   <a href="/launchpad/1" className="block px-4 py-2 text-sm text-white hover:text-black hover:font-bold hover:bg-lime-300">Launchpad 1</a>
@@ -84,11 +84,11 @@ const Header = () => {
             )}
           </div>
         </div>
-        <div className="flex gap-3.5 text-xs font-bold text-lime-300">
-          <a href='/' className="justify-center px-9 py-5 border border-lime-300 border-solid max-md:px-5 hover:bg-lime-400 cursor-pointer hover:text-black">
+        <div className="flex gap-3.5 text-xs font-bold text-lime-300  md:text-">
+          <a href='/' className="justify-center flex  px-5 py-3 sm:py-5 border border-lime-300 border-solid max-md:px-3 hover:bg-lime-400 cursor-pointer hover:text-black">
             Alpha Mode
           </a>
-          <a href='/' className="justify-center px-9 py-5 border border-lime-300 border-solid max-md:px-5 hover:bg-lime-400 cursor-pointer hover:text-black">
+          <a href='/' className="justify-center px-5 py-3 sm:py-5 border border-lime-300 border-solid max-md:px-5 hover:bg-lime-400 cursor-pointer hover:text-black">
             Degan Mode
           </a>
         </div>

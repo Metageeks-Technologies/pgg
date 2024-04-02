@@ -19,7 +19,7 @@ const Empowering = () => {
 
   return (
     <div>
-      <div className="p-8">
+      <div className="">
         {isMobile ? <Mobileempowering /> : <Desktopempowering />}
       </div>
     </div>
@@ -44,10 +44,10 @@ const Desktopempowering = () => {
             </div>
             <div className="flex gap-5 mt-16 text-white max-md:flex-wrap max-md:mt-10">
               <a href="/launchpad" className="flex items-center justify-center px-14 py-5 font-bold border border-solid border-white border-opacity-10 max-md:px-5 bg-purple-700">
-                <button>Lunchpad</button>
+                Lunchpad
               </a>
               <a href="/find-gems" className="flex items-center justify-center px-14 py-5 font-bold border border-solid border-white border-opacity-10 max-md:px-5 bg-purple-700">
-                <button>Find the Gems</button>
+                Find the Gems
               </a>
             </div>
 
@@ -92,8 +92,8 @@ const Desktopempowering = () => {
 const Mobileempowering = () => {
   return (
     <div>
-      <div className="mt-14 text-2xl leading-10 text-center text-white">
-       <h1> Empowering <span className="text-violet-600">Blockchain </span>Innovations </h1>
+      <div className="mt-14 text-xl leading-10 text-center text-white">
+       <h1> Empowering <br /><span className="text-violet-600">Blockchain </span>Innovations </h1>
       </div>
 
       <div className="mt-7 w-80 text-xs text-center  text-white text-opacity-30">
@@ -102,7 +102,7 @@ const Mobileempowering = () => {
 
       <div className="flex gap-4 mt-7 text-xs text-white">
         <div className="justify-center px-10 py-3.5 whitespace-nowrap ml-4 bg-violet-600 w-[40%]">
-         <h1> Lunchpad </h1>
+          Lunchpad 
         </div>
         <div className="justify-center px-10 py-4 font-bold border border-solid border-white border-opacity-10">
           Find the Gems

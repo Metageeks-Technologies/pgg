@@ -19,7 +19,7 @@ const Features = () => {
 
   return (
     <div>
-      <div className="p-8">
+      <div className="p-2">
         {isMobile ? <Mobilefeatures /> : <Desktopfeatures />}
       </div>
     </div>
@@ -223,6 +223,11 @@ const Mobilefeatures = () => {
   return (
     <div>
       <div >
+      <div className="flex mt-36 justify-center items-center">
+        <div className="text-4xl text-white  leading-[80px] max-md:mt-10">
+         <h1> Our <span className="text-violet-600">Features</span></h1>
+        </div>
+      </div>
         <div className="px-5 p-2 mt-11 w-full max-w-[100px] max-md:mt-10 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
@@ -239,7 +244,7 @@ const Mobilefeatures = () => {
                       className="w-full aspect-square"
                     />
                   </div>
-                  <div className="mt-5 text-2xl leading-4 text-white">
+                  <div className="mt-5 text-xl leading-4 text-white">
                     <button className='hover hover:text-white hover:font-bold'>
                       <h1>Web3 Innovation</h1>
                       </button>
@@ -266,7 +271,7 @@ const Mobilefeatures = () => {
                       className="w-full aspect-square"
                     />
                   </div>
-                  <div className="mt-5 text-2xl leading-4 text-white">
+                  <div className="mt-5 text-xl leading-4 text-white">
                   <button className='hover hover:text-white hover:font-bold'>
                     <h1>Launchpad</h1>
                     </button>
@@ -292,7 +297,7 @@ const Mobilefeatures = () => {
                       className="w-full aspect-square"
                     />
                   </div>
-                  <div className="mt-5 text-2xl leading-4 text-white">
+                  <div className="mt-5 text-xl leading-4 text-white">
                     <button className='hover hover:text-white hover:font-bold'>
                       <h1>Incubator</h1>
                       </button>
@@ -307,8 +312,10 @@ const Mobilefeatures = () => {
           </div>
         </div>
       </div>
-      <div className="justify-center ml-24 mr-28 px-8 py-4 mt-8 text-xs font-bold text-lime-300 border border-lime-300 border-solid">
+      <div className='flex justify-center align-middle'>
+      <div className="justify-center flex w-[40%] py-4 mt-8 text-xs font-bold text-lime-300 border border-lime-300 border-solid">
         See More
+      </div>
       </div>
     </div>
   );

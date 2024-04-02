@@ -22,7 +22,7 @@ const Works = () => {
 
   return (
     <div>
-      <div className="p-8">
+      <div className="p-4">
         {isMobile ? <Mobileworks /> : <Desktopworks />}
       </div>
     </div>
@@ -242,7 +242,7 @@ const Mobileworks = () => {
         elit scelerisque. In egestas Lorem ipsum dolor sit amet,
         <br />
       </div>
-      <div className="flex gap-2.5 justify-center px-9 py-5 mt-8 text-xs bg-lime-300 text-zinc-900">
+      <div className="flex gap-2.5 justify-center px-4 w-[55%] py-5 mt-8 text-xs bg-lime-300 text-zinc-900">
         <h1><div>Visit Site</div></h1>
         <img
           loading="lazy"
@@ -313,7 +313,7 @@ const Mobileworks = () => {
         <br />
       </div>
 
-      <div className="flex gap-2.5 justify-center px-9 py-5 mt-8 text-xs text-white bg-violet-600">
+      <div className="flex gap-2.5 justify-center px-4 w-[55%] py-5 mt-8 text-xs text-white bg-violet-600">
         <h1><div>Visit Site</div></h1>
         <img
           loading="lazy"
@@ -322,8 +322,8 @@ const Mobileworks = () => {
         />
       </div>
 
-      <div className="flex gap-3 mt-7 text-xs font-semibold leading-6 text-white capitalize">
-        <div className="flex flex-1 gap-1">
+      <div className="flex gap-1 mt-10 text-xs font-semibold  leading-6 text-white capitalize">
+        <div className="flex  gap-1">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/248f83232243e59908cdaf533213b9625f5f2d0c6cb39b2f8af520f1edc6cd7c?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
@@ -331,7 +331,7 @@ const Mobileworks = () => {
           />
           <div>Built with Tailwind css</div>
         </div>
-        <div className="flex flex-1 gap-1">
+        <div className="flex  gap-1">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/248f83232243e59908cdaf533213b9625f5f2d0c6cb39b2f8af520f1edc6cd7c?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"

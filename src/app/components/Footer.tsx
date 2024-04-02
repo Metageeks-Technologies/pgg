@@ -122,11 +122,11 @@ const Mobilefooter = () => {
         <div className="flex flex-col grow shrink-0 px-5 mt-2 basis-0 w-fit">
           <div className="text-xl text-white">
             <h1>Generate</h1></div>
-          <div className="flex gap-3 mt-11 text-xs font-bold text-lime-300">
-            <div className="justify-center px-9 py-5 border border-lime-300 border-solid">
+          <div className="flex gap-3 mt-11 text-xs w-[300px] font-bold text-lime-300">
+            <div className="justify-center flex px-5 py-5 border border-lime-300 border-solid">
               Alpha Mode
             </div>
-            <div className="justify-center px-9 py-5 border border-lime-300 border-solid">
+            <div className="justify-center flex px-5 py-5 border border-lime-300 border-solid">
               Degan Mode
             </div>
           </div>

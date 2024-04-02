@@ -255,7 +255,7 @@ const Mobileadvisor = () => {
   return (
     <div>
       <div className="flex mt-56 justify-center items-center">
-        <div className="text-5xl  leading-[80px] max-md:mt-10">
+        <div className="text-4xl text-white leading-[80px] max-md:mt-10">
         <h1> Our <span className="text-violet-600 ">Adivsor</span></h1>
         </div>
       </div>
@@ -378,7 +378,7 @@ const Mobileadvisor = () => {
           </div>
         </div>
       </div>
-      <div className="justify-center ml-24 mr-28 px-8 py-4 mt-8 text-xs font-bold text-lime-300 border border-lime-300 border-solid">
+      <div className="justify-center ml-24 mr-28 px-3 py-4 mt-8 text-xs font-bold text-lime-300 border border-lime-300 border-solid">
         See More
       </div>
     </div>
