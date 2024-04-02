@@ -114,7 +114,7 @@ const Mobiletheory = () => {
       <img
         loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce37ed401791466a3d32ad4533bc677cf085adfa06fab46c42710c9a0341e37d?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
-        className="flex mt-20 max-w-full justify-center ml-10 aspect-square w-[full] sm:justify-center"
+        className="flex mt-16 max-w-full justify-center ml-10 aspect-square w-[full] sm:justify-center"
       />
 
       <div className=" mt-9 ml-8 text-xl leading-10 text-white">

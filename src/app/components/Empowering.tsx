@@ -100,9 +100,9 @@ const Mobileempowering = () => {
         Choose Your Path: Curated project launches or community-powered sales
       </div>
 
-      <div className="flex gap-4 mt-7 text-xs text-white">
-        <div className="justify-center px-10 py-3.5 whitespace-nowrap ml-4 bg-violet-600 w-[40%]">
-          Lunchpad 
+      <div className="flex gap-4 mt-7 text-xs text-white text-center">
+        <div className="justify-center flex px-10 py-3.5 whitespace-nowrap ml-4 bg-violet-600 w-[40%]">
+          <h1>Lunchpad </h1>
         </div>
         <div className="justify-center px-10 py-4 font-bold border border-solid border-white border-opacity-10">
           Find the Gems

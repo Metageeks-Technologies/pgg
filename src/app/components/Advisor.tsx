@@ -20,7 +20,7 @@ const Advisor = () => {
 
   return (
     <div>
-      <div className="p-8">
+      <div className="p-4">
         {isMobile ? <Mobileadvisor /> : <Desktopadvisor />}
       </div>
     </div>
@@ -38,7 +38,7 @@ const Desktopadvisor = () => {
       </div>
 
       <div>
-        <div className="px-5 p-4 mt-10 w-full max-w-[1500px] max-md:max-w-full">
+        <div className="px-5 p-4 mt-6 w-full max-w-[1500px] max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
               <div className="flex flex-col grow px-5 py-5 border border-solid border-white border-opacity-10 max-md:mt-5">
@@ -378,8 +378,10 @@ const Mobileadvisor = () => {
           </div>
         </div>
       </div>
-      <div className="justify-center ml-24 mr-28 px-3 py-4 mt-8 text-xs font-bold text-lime-300 border border-lime-300 border-solid">
+      <div className='align-center justify-center flex'>
+      <div className="justify-center flex text-center w-[40%]  px-3 py-4 mt-8 text-xs font-bold text-lime-300 border border-lime-300 border-solid">
         See More
+      </div>
       </div>
     </div>
   );

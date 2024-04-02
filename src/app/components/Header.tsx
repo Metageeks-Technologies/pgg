@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <div >
-      <div className="flex gap-5 justify-between items-start px-5 w-full  p-10 md:after:hidden">
+      <div className="flex gap-5 sm:gap-5 sm:justify-between items-start sm:px-8 px-0 w-full  p-10 md:after:hidden">
         <a href="/"><button>
         <img
           loading="lazy"
@@ -17,7 +17,7 @@ const Header = () => {
           alt="Header Image"
         />
         </button></a>
-        <div className='flex gap-2 justify-start md:hidden'>
+        <div className='flex gap-2 px-1 sm:hidden'>
         <a href="/"><button>
         <img
           loading="lazy"
@@ -26,7 +26,7 @@ const Header = () => {
         />
         </button></a>
         </div>
-        <div className=" gap-5 justify-between items-start mt-5 text-base text-white whitespace-nowra md:flex hidden">
+        <div className=" gap-5 justify-between items-start mt-5 text-base  text-white whitespace-nowra md:flex hidden">
           
           <a href="/home" className="cursor-pointer hover:text-white hover:font-bold">Home</a>
 
@@ -84,7 +84,7 @@ const Header = () => {
             )}
           </div>
         </div>
-        <div className="flex gap-3.5 text-xs font-bold text-lime-300  md:text-">
+        <div className="flex gap-3 px-6 justify-end text-xs font-bold text-lime-300  md:text-">
           <a href='/' className="justify-center flex  px-5 py-3 sm:py-5 border border-lime-300 border-solid max-md:px-3 hover:bg-lime-400 cursor-pointer hover:text-black">
             Alpha Mode
           </a>

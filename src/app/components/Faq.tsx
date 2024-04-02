@@ -105,7 +105,7 @@ const Desktopfaq = () => {
 const Mobilefaq = () => {
   return (
     <div>
-      <div className="self-center mt-20 text-2xl leading-10 text-center text-white">
+      <div className="self-center mt-10 text-2xl leading-10 text-center text-white">
         <h1>FAQ</h1>
       </div>
       <div className="mt-3.5 text-xs text-center text-white text-opacity-30">

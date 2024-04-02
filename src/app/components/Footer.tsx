@@ -120,8 +120,14 @@ const Mobilefooter = () => {
 
       <div className="flex gap-5 items-start mt-7 w-full max-w-[353px]">
         <div className="flex flex-col grow shrink-0 px-5 mt-2 basis-0 w-fit">
-          <div className="text-xl text-white">
-            <h1>Generate</h1></div>
+          <div className="text-xl text-white flex flex-row">
+            <h1>Generate</h1>
+            <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c26546566133f58f460088ce3a44da215bc1b65604f7d6b9e580d9fe9042056?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
+          className="shrink-0 border border-solid ml-32 aspect-square border-white border-opacity-10 stroke-[1px] stroke-white stroke-opacity-10 w-[30px]"
+        /></div>
+           
           <div className="flex gap-3 mt-11 text-xs w-[300px] font-bold text-lime-300">
             <div className="justify-center flex px-5 py-5 border border-lime-300 border-solid">
               Alpha Mode
@@ -148,11 +154,7 @@ const Mobilefooter = () => {
             />
           </div>
         </div>
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c26546566133f58f460088ce3a44da215bc1b65604f7d6b9e580d9fe9042056?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
-          className="shrink-0 border border-solid aspect-square border-white border-opacity-10 stroke-[1px] stroke-white stroke-opacity-10 w-[30px]"
-        />
+        
       </div>
     </div>
   );

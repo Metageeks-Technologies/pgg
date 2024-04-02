@@ -19,7 +19,7 @@ const Ads = () => {
 
   return (
     <div>
-      <div className="p-8">
+      <div className="p-2">
         {isMobile ? <Mobileads /> : <Desktopads />}
       </div>
     </div>
@@ -106,7 +106,7 @@ const Desktopads = () => {
 const Mobileads = () => {
   return (
     <div>
-      <div className="flex flex-col p-4 border border-solid border-white border-opacity-10">
+      <div className="flex mt-10 flex-col p-4 border border-solid border-white border-opacity-10">
       <div className="flex flex-col justify-center border border-solid border-white border-opacity-10">
         <img
           loading="lazy"
