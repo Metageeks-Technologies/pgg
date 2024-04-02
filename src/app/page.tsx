@@ -1,74 +1,69 @@
-
-import Head from '@/app/components/Header'
-import Empow from '@/app/components/Empowering'
-import Mainlanding from "@/app/components/Mainlanding"
-import Ads from "@/app/components/Ads"
-import Theory from "@/app/components/Theory"
-import Features from "@/app/components/Features"
-import Works from "@/app/components/Works"
-import Imageline from "@/app/components/Imageline"
-import Backers from "@/app/components/Backers"
-import FAQ from "@/app/components/Faq"
-import Advisor from "@/app/components/Advisor"
-import Team1 from "@/app/components/Team"
-import Footer from "@/app/components/Footer"
+import Head from "@/app/components/Header";
+import Empow from "@/app/components/Empowering";
+import Mainlanding from "@/app/components/Mainlanding";
+import Ads from "@/app/components/Ads";
+import Theory from "@/app/components/Theory";
+import Features from "@/app/components/Features";
+import Works from "@/app/components/Works";
+import Imageline from "@/app/components/Imageline";
+import Backers from "@/app/components/Backers";
+import FAQ from "@/app/components/Faq";
+import Advisor from "@/app/components/Advisor";
+import Team1 from "@/app/components/Team";
+import Footer from "@/app/components/Footer";
 export default function Home() {
   return (
     <div>
-        <div className='bg-black'>
-      <div className="">
-        <Head />
-      </div>
+      <div className="bg-black">
+        <div className="">
+          <Head />
+        </div>
 
-      <div className="">
-        <Empow />
-      </div>
-      
+        <div className="">
+          <Empow />
+        </div>
 
-      <div>
-        <Mainlanding/>
-      </div>
+        <div>
+          <Mainlanding />
+        </div>
 
-      <div className="p-4">
         <Ads />
-      </div>
+        <div className="">
+          <Theory />
+        </div>
 
-      <div className="">
-        <Theory />
-      </div>
+        <div>
+          <Features />
+        </div>
 
-      <div>
-        <Features />
-      </div>
+        <div>
+          <Works />
+        </div>
 
-      <div>
-        <Works />
-      </div>
+        <div>
+          <Imageline />
+        </div>
 
-      <div>
-        <Imageline />
-      </div>
+        <div>
+          <Backers />
+        </div>
 
-      <div>
-        <Backers />
-      </div>
-      
-      <div>
-        <FAQ/>
-      </div>
+        <div>
+          <FAQ />
+        </div>
 
-      <div>
-        <Advisor />
-      </div>
+        <div>
+          <Advisor />
+        </div>
 
-      <div>
-        <Team1 />
-      </div>
+        <div>
+          <Team1 />
+        </div>
 
-      <div>
-        <Footer />
+        <div>
+          <Footer />
+        </div>
       </div>
-     </div> 
     </div>
   );
 }
