@@ -21,7 +21,7 @@ const Mainlanding = () => {
 
   return (
     <div>
-      <div className="p-8">
+      <div className="py-8">
         {isMobile ? <Mobilemmainlanding /> : <Desktopmainlanding />}
       </div>
     </div>

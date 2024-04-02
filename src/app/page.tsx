@@ -15,7 +15,7 @@ import Footer from "@/app/components/Footer"
 export default function Home() {
   return (
     <div>
-        <div >
+        <div className='bg-black'>
       <div className="">
         <Head />
       </div>

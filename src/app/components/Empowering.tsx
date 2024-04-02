@@ -34,7 +34,7 @@ const Desktopempowering = () => {
       <div className="flex gap-5 max-md:flex-col max-md:gap-0">
         <div className="flex flex-col w-[60%] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col px-5 mt-4 text-xs max-md:mt-10 max-md:max-w-full">
-            <div className="text-6xl  leading-[80px] max-md:max-w-full max-md:text-4xl max-md:leading-[62px]">
+            <div className="text-6xl text-white leading-[80px] max-md:max-w-full max-md:text-4xl max-md:leading-[62px]">
              <h1> Empowering <span className="text-violet-600"> <br />Blockchain </span> <br />
               Innovations</h1>
             </div>

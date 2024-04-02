@@ -7,7 +7,7 @@ const Header = () => {
   const [showLaunchpadMenu, setShowLaunchpadMenu] = useState(false);
 
   return (
-    <div>
+    <div >
       <div className="flex gap-5 justify-between items-start px-5 w-full  p-10 md:after:hidden">
         <a href="/"><button>
         <img

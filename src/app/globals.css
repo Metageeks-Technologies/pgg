@@ -8,13 +8,13 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -35,9 +35,8 @@ body {
 @font-face {
   font-family: 'Republica';
   src: url('/fonts/Republica Minor 2.0.otf') format('opentype');
-  /* Add other font formats if needed */
 }
 
 h1 {
-  font-family: 'Republica', sans-serif; /* Use YourFontName for headings */
+  font-family: 'Republica', sans-serif; 
 }
