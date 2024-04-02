@@ -263,7 +263,7 @@ const Desktopadvisor = () => {
 const Mobileadvisor = () => {
   return (
     <div>
-      <div className="flex mt-56 justify-center items-center">
+      <div className="flex mt-20 justify-center items-center">
         <div className="text-4xl text-white leading-[80px] max-md:mt-10">
           <h1>
             {" "}

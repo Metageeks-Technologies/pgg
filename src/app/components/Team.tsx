@@ -3,7 +3,7 @@ import React from "react";
 const Team = () => {
   return (
     <div className=" container mb-36">
-      <div className="flex mt-16 justify-center items-center">
+      <div className="flex mt-20 justify-center items-center">
         <div className="text-5xl text-white leading-[80px] max-md:mt-10">
           <h1>
             {" "}
