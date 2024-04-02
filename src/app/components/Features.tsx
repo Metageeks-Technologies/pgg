@@ -19,7 +19,7 @@ const Features = () => {
 
   return (
     <div>
-      <div className="p-2">
+      <div className="p-2 max-md:p-0">
         {isMobile ? <Mobilefeatures /> : <Desktopfeatures />}
       </div>
     </div>
@@ -227,18 +227,23 @@ const Mobilefeatures = () => {
   return (
     <div>
       <div>
-        <div className="flex mt-36 justify-center items-center">
-          <div className="text-4xl text-white  leading-[80px] max-md:mt-10">
+        <div className="flex mt-10 justify-center items-center">
+          <div className="text-4xl text-white text-center leading-[80px] max-md:mt-10">
             <h1>
               {" "}
               Our <span className="text-violet-600">Features</span>
             </h1>
+            <div className="mt-2 text-xs px-5 text-center text-white text-opacity-30 max-md:max-w-full mx-auto">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Egestas purus viverra accumsan in nisl nisi.
+            </div>
           </div>
         </div>
-        <div className="px-5 p-2 mt-11 w-full max-w-[100px] max-md:mt-10 max-md:max-w-full">
+        <div className="px-5 p-2 mt-11 w-full max-w-[100px] max-md:mt-2 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col grow items-center pt-4 pb-9 cursor-pointer border border-solid border-white hover:bg-zinc-800 hover:text-white hover:text-bold border-opacity-10 max-md:mt-5">
+              <div className="flex flex-col grow items-center py-4 cursor-pointer border border-solid border-white hover:bg-zinc-800 hover:text-white hover:text-bold border-opacity-20 max-md:mt-5">
                 <div className="shrink-0  bg-white h-[3px] w-[38px]" />
                 <div className="mt-1.5 text-xl  tracking-wide text-center text-white">
                   <h1> 01.</h1>
@@ -264,7 +269,7 @@ const Mobilefeatures = () => {
               </div>
             </div>
             <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col grow items-center pt-4 pb-10 border border-solid hover:bg-zinc-800 border-white border-opacity-10 max-md:mt-5">
+              <div className="flex flex-col grow items-center py-4 border border-solid hover:bg-zinc-800 border-white border-opacity-20 max-md:mt-5">
                 <div className="shrink-0 bg-white h-[3px] w-[38px]" />
                 <div className="mt-1.5 text-xl tracking-wide text-center text-white">
                   <h1> 02.</h1>
@@ -290,7 +295,7 @@ const Mobilefeatures = () => {
               </div>
             </div>
             <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col grow items-center pt-4 pb-9 border border-solid hover:bg-zinc-800 border-white border-opacity-10 max-md:mt-5">
+              <div className="flex flex-col grow items-center py-4  border border-solid hover:bg-zinc-800 border-white border-opacity-20 max-md:mt-5">
                 <div className="shrink-0 bg-white h-[3px] w-[38px]" />
                 <div className="mt-1.5 text-xl tracking-wide text-center text-white">
                   <h1>03.</h1>
@@ -319,7 +324,7 @@ const Mobilefeatures = () => {
         </div>
       </div>
       <div className="flex justify-center align-middle">
-        <div className="justify-center flex w-[40%] py-4 mt-8 text-xs font-bold text-lime-300 border border-lime-300 border-solid">
+        <div className="justify-center flex w-[40%] py-4 mt-2 text-xs font-bold text-lime-300 border border-lime-300 border-solid">
           See More
         </div>
       </div>

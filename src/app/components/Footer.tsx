@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <div>
-      <div className="p-8">
+      <div className="p-8 max-md:px-0">
         {isMobile ? <Mobilefooter /> : <Desktopfooter />}
       </div>
     </div>
@@ -160,7 +160,7 @@ const Desktopfooter = () => {
 
 const Mobilefooter = () => {
   return (
-    <div className="mb-36">
+    <div className="mb-4 flex flex-col items-center">
       <div className="flex gap-5 justify-between mt-9 w-full mb-30 max-w-[353px]">
         <div className="flex flex-col px-5 my-auto text-xl text-white whitespace-nowrap">
           <h1>
@@ -168,6 +168,9 @@ const Mobilefooter = () => {
           </h1>
           <h1>
             <div className="mt-11">Order</div>
+          </h1>
+          <h1>
+            <div className="mt-11">Generate</div>
           </h1>
         </div>
         <div className="flex flex-col items-center">
@@ -179,23 +182,28 @@ const Mobilefooter = () => {
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c26546566133f58f460088ce3a44da215bc1b65604f7d6b9e580d9fe9042056?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
-            className="mt-7 border border-solid aspect-square border-white border-opacity-10 stroke-[1px] stroke-white stroke-opacity-10 w-[30px]"
+            className="mt-10 border border-solid aspect-square border-white border-opacity-10 stroke-[1px] stroke-white stroke-opacity-10 w-[30px]"
+          />
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c26546566133f58f460088ce3a44da215bc1b65604f7d6b9e580d9fe9042056?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
+            className="mt-14 border border-solid aspect-square border-white border-opacity-10 stroke-[1px] stroke-white stroke-opacity-10 w-[30px]"
           />
         </div>
       </div>
 
-      <div className="flex gap-5 items-start mt-7 w-full max-w-[353px]">
-        <div className="flex flex-col grow shrink-0 px-5 mt-2 basis-0 w-fit">
-          <div className="text-xl text-white flex flex-row">
+      <div className="flex gap-5 items-start mt-7 w-full ">
+        <div className="flex flex-col justify-center items-center grow shrink-0 px-5 mt-2 basis-0 w-fit">
+          {/* <div className="text-xl text-white flex flex-row">
             <h1>Generate</h1>
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c26546566133f58f460088ce3a44da215bc1b65604f7d6b9e580d9fe9042056?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
               className="shrink-0 border border-solid ml-32 aspect-square border-white border-opacity-10 stroke-[1px] stroke-white stroke-opacity-10 w-[30px]"
             />
-          </div>
+          </div> */}
 
-          <div className="flex gap-3 mt-11 text-xs w-[300px] font-bold text-lime-300">
+          <div className="flex  justify-center gap-3 mt-11 text-xs w-[300px] font-bold text-lime-300">
             <div className="justify-center flex px-5 py-5 border border-lime-300 border-solid">
               Alpha Mode
             </div>

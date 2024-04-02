@@ -2,9 +2,9 @@ import React from "react";
 
 const Team = () => {
   return (
-    <div className=" container mb-36">
-      <div className="flex mt-20 justify-center items-center">
-        <div className="text-5xl text-white leading-[80px] max-md:mt-10">
+    <div className=" container max-md:px-5 mb-36 max-md:mb-10">
+      <div className="flex mt-20 max-md:mt-10 justify-center items-center">
+        <div className="text-5xl max-md:text-[36px] text-white leading-[80px] ">
           <h1>
             {" "}
             Our <span className="text-[#cdff3f]">Team</span>
@@ -13,10 +13,10 @@ const Team = () => {
       </div>
 
       <div className="justify-center flex">
-        <div className=" px-5 mt-8 max-w-full w-[1200px]">
+        <div className=" px-5 max-md:px-0 mt-8 w-full ">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col grow px-5 py-5 border border-solid border-white border-opacity-10 max-md:mt-5">
+              <div className="flex flex-col grow px-5 py-5 border border-solid border-white border-opacity-20 max-md:mt-5">
                 <div className="flex flex-col justify-center bg-white">
                   <img
                     loading="lazy"
@@ -46,7 +46,7 @@ const Team = () => {
               </div>
             </div>
             <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col grow px-5 py-5 border border-solid border-white border-opacity-10 max-md:mt-5">
+              <div className="flex flex-col grow px-5 py-5 border border-solid border-white border-opacity-20 max-md:mt-5">
                 <div className="flex flex-col justify-center bg-white">
                   <img
                     loading="lazy"

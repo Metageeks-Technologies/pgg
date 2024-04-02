@@ -16,27 +16,27 @@ const Header = () => {
   };
 
   return (
-    <div className="container">
-      <div className="flex gap-5 sm:gap-5 sm:justify-between items-center sm:px-8 px-0 w-full  p-10 md:after:hidden">
+    <div className="container p-0">
+      <div className="flex gap-5 sm:gap-5 sm:justify-between items-center sm:px-8 max-md:py-5 max-md:px-5 w-full p-10 md:after:hidden">
         <a href="/">
-          <button>
+          <span>
             <img
               loading="lazy"
               srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/cd032a0418051cd4d5cdb003a4d6da371d34a7b1396b7000a1f3f62ee14ec748?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/cd032a0418051cd4d5cdb003a4d6da371d34a7b1396b7000a1f3f62ee14ec748?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/cd032a0418051cd4d5cdb003a4d6da371d34a7b1396b7000a1f3f62ee14ec748?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/cd032a0418051cd4d5cdb003a4d6da371d34a7b1396b7000a1f3f62ee14ec748?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/cd032a0418051cd4d5cdb003a4d6da371d34a7b1396b7000a1f3f62ee14ec748?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/cd032a0418051cd4d5cdb003a4d6da371d34a7b1396b7000a1f3f62ee14ec748?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/cd032a0418051cd4d5cdb003a4d6da371d34a7b1396b7000a1f3f62ee14ec748?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/cd032a0418051cd4d5cdb003a4d6da371d34a7b1396b7000a1f3f62ee14ec748?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
               className="shrink-0 max-w-full aspect-[3.57] w-[202px] md:flex hidden"
               alt="Header Image"
             />
-          </button>
+          </span>
         </a>
-        <div className="flex gap-2 px-1 sm:hidden">
+        <div className="flex -ms-4 justify-start items-start px-0 sm:hidden">
           <a href="/">
-            <button>
+            <span>
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/a922751de765628a0b781d7eed3988a7a8198b0aed453cafdd1ab908f5521c98?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
-                className="shrink-0 w-10 border border-solid aspect-square border-white border-opacity-10 "
+                className="shrink-0 w-10 border-[2px] border-solid aspect-square border-white border-opacity-10 "
               />
-            </button>
+            </span>
           </a>
         </div>
         <div className=" gap-5 justify-between items-center text-base  text-white whitespace-nowra md:flex hidden">
@@ -136,16 +136,16 @@ const Header = () => {
             )}
           </div>
         </div>
-        <div className="flex gap-3 px-6 justify-end text-xs font-bold text-lime-300  md:text-">
+        <div className="flex gap-3 px-6 max-md:px-0 max-md:w-full justify-end text-xs font-bold text-lime-300  ">
           <a
             href="/"
-            className="justify-center flex  px-5 py-3 sm:py-5 border border-lime-300 border-solid max-md:px-3 hover:bg-lime-400 cursor-pointer hover:text-black"
+            className="justify-center max-md:text-[8px] flex  px-5 py-3 sm:py-5 border border-lime-300 border-solid max-md:px-3 hover:bg-lime-400 cursor-pointer hover:text-black"
           >
             Alpha Mode
           </a>
           <a
             href="/"
-            className="justify-center px-5 py-3 sm:py-5 border border-lime-300 border-solid max-md:px-5 hover:bg-lime-400 cursor-pointer hover:text-black"
+            className="justify-center px-5 py-3 max-md:text-[8px] sm:py-5 border border-lime-300 border-solid max-md:px-5 hover:bg-lime-400 cursor-pointer hover:text-black"
           >
             Degan Mode
           </a>

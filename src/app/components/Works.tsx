@@ -21,7 +21,9 @@ const Works = () => {
   }, []);
 
   return (
-    <div className="p-4">{isMobile ? <Mobileworks /> : <Desktopworks />}</div>
+    <div className="p-4 max-md:px-5">
+      {isMobile ? <Mobileworks /> : <Desktopworks />}
+    </div>
   );
 };
 
@@ -251,12 +253,12 @@ const Desktopworks = () => {
 const Mobileworks = () => {
   return (
     <div>
-      <div className="self-center mt-20 text-2xl leading-10 text-center text-white">
+      <div className="self-center mt-10 text-2xl leading-10 text-center text-white">
         <h1>
           How it<span className="text-violet-600"> Works</span> ?
         </h1>
       </div>
-      <div className="mt-4 text-xs text-center text-white text-opacity-30">
+      <div className="mt-4 px-5  text-xs text-center text-white text-opacity-30">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Egestas purus
         viverra accumsan in nisl nisi.
@@ -287,12 +289,12 @@ const Mobileworks = () => {
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/189ae6f35d2d48527ad9d6119fba4cf79e3aeb1664c73e1f6d820f68f6cd5852?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
-          className="shrink-0 my-auto border-2 border-solid aspect-[2.86] border-zinc-900 stroke-[2px] stroke-zinc-900 w-[31px]"
+          className="shrink-0 my-auto border-solid aspect-[2.86] border-zinc-900 stroke-[2px] stroke-zinc-900 w-[31px]"
         />
       </div>
 
       <div className="flex gap-3 mt-7 text-xs font-semibold leading-6 text-white capitalize">
-        <div className="flex flex-1 gap-1">
+        <div className="flex items-start gap-1">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/191c03206c12a5827de39051beef32a2e9eee5b5d09d812255dcb809f9627ec6?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
@@ -300,7 +302,7 @@ const Mobileworks = () => {
           />
           <div>Built with Tailwind css</div>
         </div>
-        <div className="flex flex-1 gap-1">
+        <div className="flex gap-1">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/191c03206c12a5827de39051beef32a2e9eee5b5d09d812255dcb809f9627ec6?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
@@ -363,7 +365,7 @@ const Mobileworks = () => {
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/d2bb81b0333dc2cbea46bb9085ea9ead645d02a282c0f2284cd8feaa77394f54?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
-          className="shrink-0 my-auto border-2 border-white border-solid aspect-[2.86] stroke-[2px] stroke-white w-[31px]"
+          className="shrink-0 my-auto border-white border-solid aspect-[2.86] stroke-[2px] stroke-white w-[31px]"
         />
       </div>
 

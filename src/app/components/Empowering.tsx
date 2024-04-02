@@ -107,7 +107,7 @@ const Desktopempowering = () => {
 const Mobileempowering = () => {
   return (
     <div>
-      <div className="mt-14 text-xl leading-10 text-center text-white">
+      <div className="mt-10 text-xl leading-10 text-center text-white">
         <h1>
           {" "}
           Empowering <br />
@@ -115,16 +115,16 @@ const Mobileempowering = () => {
         </h1>
       </div>
 
-      <div className="mt-7 w-80 text-xs text-center  text-white text-opacity-30">
+      <div className="mt-5 w-80 text-xs text-center mx-auto  text-white text-opacity-30">
         Choose Your Path: Curated project launches or community-powered sales
       </div>
 
-      <div className="flex gap-4 mt-7 text-xs text-white text-center">
-        <div className="justify-center flex px-10 py-3.5 whitespace-nowrap ml-4 bg-violet-600 w-[40%]">
-          <h1>Lunchpad </h1>
+      <div className="flex gap-4 mt-7 justify-center text-xs text-white text-center">
+        <div className="justify-center flex px-10 py-4 text-[8px] whitespace-nowrap bg-violet-600 w-[40%]">
+          <h1 style={{ letterSpacing: "0.05em" }}>Lunchpad </h1>
         </div>
-        <div className="justify-center px-10 py-4 font-bold border border-solid border-white border-opacity-10">
-          Find the Gems
+        <div className="justify-center font-republica px-10 py-4  border text-[8px] border-solid border-white bg-violet-600  border-opacity-10">
+          <h1 style={{ letterSpacing: "0.05em" }}> Find the Gems</h1>
         </div>
       </div>
 
@@ -132,7 +132,7 @@ const Mobileempowering = () => {
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/6700d527d9f9e3bf2c5040f5783e4e9ed88f36155f84c38b142157ad8ca70309?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
-          className="mt-2.5 w-full max-w-xs aspect-square ml-4"
+          className="mt-2.5 w-full max-w-xs aspect-square mx-auto"
         />
       </div>
     </div>

@@ -19,7 +19,7 @@ const Theory = () => {
 
   return (
     <div>
-      <div className="p-8">
+      <div className="p-8 max-md:px-5">
         {isMobile ? <Mobiletheory /> : <Desktoptheory />}
       </div>
     </div>
@@ -125,20 +125,22 @@ const Desktoptheory = () => {
 const Mobiletheory = () => {
   return (
     <div>
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce37ed401791466a3d32ad4533bc677cf085adfa06fab46c42710c9a0341e37d?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
-        className="flex mt-16 max-w-full justify-center ml-10 aspect-square w-[full] sm:justify-center"
-      />
+      <div className="flex justify-center">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce37ed401791466a3d32ad4533bc677cf085adfa06fab46c42710c9a0341e37d?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
+          className="flex mt-12 max-w-full justify-center aspect-square w-[full] sm:justify-center"
+        />
+      </div>
 
-      <div className=" mt-9 ml-8 text-xl leading-10 text-white">
-        <h1>
+      <div className=" mt-9 text-center text-xl leading-6 text-white">
+        <h1 className="text-center">
           {" "}
           Know more about <span className="text-lime-300">Tokenlunch,pro</span>
         </h1>
       </div>
 
-      <div className="mt-6 text-xs leading-4 text-center text-white">
+      <div className="mt-6 text-xs text-gray-500 leading-4 text-justify">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Egestas purus
         viverra accumsan in nisl nisi. Arcu Lorem ipsum dolor sit amet,
@@ -164,7 +166,7 @@ const Mobiletheory = () => {
         <br />
       </div>
 
-      <div className="justify-center self-center ml-20 mr-20 px-8 py-4 mt-6 text-xs font-bold text-lime-300 border border-lime-300 border-solid">
+      <div className="justify-center self-center w-fit mx-auto px-6 py-4 mt-2 text-xs font-bold text-lime-300 border border-lime-300 border-solid">
         Read More
       </div>
     </div>

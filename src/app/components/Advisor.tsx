@@ -19,7 +19,7 @@ const Advisor = () => {
 
   return (
     <div>
-      <div className="p-4">
+      <div className="p-4 max-md:px-5">
         {isMobile ? <Mobileadvisor /> : <Desktopadvisor />}
       </div>
     </div>
@@ -263,8 +263,8 @@ const Desktopadvisor = () => {
 const Mobileadvisor = () => {
   return (
     <div>
-      <div className="flex mt-20 justify-center items-center">
-        <div className="text-4xl text-white leading-[80px] max-md:mt-10">
+      <div className="flex mt-10 justify-center items-center">
+        <div className="text-4xl text-white leading-[80px]">
           <h1>
             {" "}
             Our <span className="text-violet-600 ">Adivsor</span>
@@ -273,10 +273,10 @@ const Mobileadvisor = () => {
       </div>
 
       <div>
-        <div className="px-5 p-4 mt-10 w-full max-w-[1500px] max-md:max-w-full">
+        <div className="px-0 mt-10 w-full max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col grow px-5 py-5 border border-solid border-white border-opacity-10 max-md:mt-5">
+              <div className="flex flex-col grow px-5 py-5 border border-solid border-white border-opacity-20 max-md:mt-5">
                 <div className="flex flex-col justify-center bg-white">
                   <img
                     loading="lazy"
@@ -306,7 +306,7 @@ const Mobileadvisor = () => {
               </div>
             </div>
             <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col grow px-5 py-5 border border-solid border-white border-opacity-10 max-md:mt-5">
+              <div className="flex flex-col grow px-5 py-5 border border-solid border-white border-opacity-20 max-md:mt-5">
                 <div className="flex flex-col justify-center bg-white">
                   <img
                     loading="lazy"
@@ -336,7 +336,7 @@ const Mobileadvisor = () => {
               </div>
             </div>
             <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col grow px-5 py-5 border border-solid border-white border-opacity-10 max-md:mt-5">
+              <div className="flex flex-col grow px-5 py-5 border border-solid border-white border-opacity-20 max-md:mt-5">
                 <div className="flex flex-col justify-center bg-white">
                   <img
                     loading="lazy"
@@ -366,7 +366,7 @@ const Mobileadvisor = () => {
               </div>
             </div>
             <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col grow px-5 py-5 border border-solid border-white border-opacity-10 max-md:mt-5">
+              <div className="flex flex-col grow px-5 py-5 border border-solid border-white border-opacity-20 max-md:mt-5">
                 <div className="flex flex-col justify-center bg-white">
                   <img
                     loading="lazy"

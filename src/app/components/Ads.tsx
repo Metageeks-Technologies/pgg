@@ -19,7 +19,7 @@ const Ads = () => {
 
   return (
     <div>
-      <div className="p-2 container mx-auto">
+      <div className="p-2 max-md:px-5 container mx-auto">
         {isMobile ? <Mobileads /> : <Desktopads />}
       </div>
     </div>
@@ -114,7 +114,7 @@ const Desktopads = () => {
 const Mobileads = () => {
   return (
     <div>
-      <div className="flex mt-10 flex-col p-4 border border-solid border-white border-opacity-10">
+      <div className="flex mt-10 flex-col p-4 px-4 border border-solid border-white border-opacity-20">
         <div className="flex flex-col justify-center border border-solid border-white border-opacity-10">
           <img
             loading="lazy"
@@ -129,17 +129,17 @@ const Mobileads = () => {
           Describe Alpha Mode as a selective, supportive pathway offering
           comprehensive services to ensure project success.
         </div>
-        <div className="flex gap-2 justify-center px-5 py-3 mt-3 text-xs font-bold text-white bg-violet-600">
+        <div className="flex gap-2 w-fit justify-center px-5 py-3 mt-3 text-xs font-bold text-white bg-violet-600">
           <div>Visit Site</div>
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/751470282e8f139c0e0902723c91f0f6956faac4b6db4ff53a49e3e0b552239b?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
-            className="shrink-0 self-start border border-white border-solid aspect-[2.63] stroke-[0.95px] stroke-white w-[29px]"
+            className="shrink-0 self-start  border-white border-solid aspect-[2.63] stroke-[0.95px] stroke-white w-[29px]"
           />
         </div>
       </div>
 
-      <div className="flex flex-col p-4 mt-5 border border-solid border-white border-opacity-10">
+      <div className="flex flex-col p-4 mt-5 px-4 border border-solid border-white border-opacity-20">
         <div className="flex flex-col justify-center border border-solid border-white border-opacity-10">
           <img
             loading="lazy"
@@ -147,16 +147,16 @@ const Mobileads = () => {
             className="w-full aspect-[3.23]"
           />
         </div>
-        <div className="mt-5 text-xl text-white">Degan Mode</div>
+        <div className="mt-5 text-xl text-white font-republica">Degan Mode</div>
         <div className="mt-4 text-xs text-white text-opacity-30">
           Random project launched by team
         </div>
-        <div className="flex gap-2 justify-center px-5 py-3 mt-5 text-xs font-bold text-white bg-violet-600">
+        <div className="flex gap-2 w-fit justify-center px-5 py-3 mt-5 text-xs font-bold text-white bg-violet-600">
           <div>Visit Site</div>
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/751470282e8f139c0e0902723c91f0f6956faac4b6db4ff53a49e3e0b552239b?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
-            className="shrink-0 self-start border border-white border-solid aspect-[2.63] stroke-[0.95px] stroke-white w-[29px]"
+            className="shrink-0 self-start border-white border-solid aspect-[2.63] stroke-[0.95px] stroke-white w-[29px]"
           />
         </div>
       </div>

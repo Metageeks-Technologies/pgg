@@ -19,7 +19,9 @@ const Faq = () => {
 
   return (
     <div>
-      <div className="p-8">{isMobile ? <Mobilefaq /> : <Desktopfaq />}</div>
+      <div className="p-8 max-md:px-5 max-md:pt-3">
+        {isMobile ? <Mobilefaq /> : <Desktopfaq />}
+      </div>
     </div>
   );
 };
@@ -139,18 +141,18 @@ const faqData = [
 
 const Mobilefaq = () => {
   return (
-    <div>
-      <div className="self-center mt-10 text-2xl leading-10 text-center text-white">
+    <div className=" flex justify-center flex-col items-center">
+      <div className="self-center mt-0 text-2xl leading-10 text-center text-white">
         <h1>FAQ</h1>
       </div>
-      <div className="mt-3.5 text-xs text-center text-white text-opacity-30">
+      <div className="mt-3.5  text-xs text-center text-white text-opacity-30">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Egestas purus
         viverra accumsan in nisl nisi.
       </div>
-      <div className="flex gap-5 justify-center px-4 py-5 mt-4 w-full text-xs leading-5 text-white border border-solid border-white border-opacity-10 max-w-[354px]">
+      <div className="flex gap-5 justify-center px-4 py-5 mt-4 w-full text-xs leading-5 text-white border border-solid border-white border-opacity-20 max-w-[354px]">
         <div className="my-auto w-[243px]">
-          <h1 style={{ letterSpacing: "0.5em" }}>
+          <h1 style={{ letterSpacing: "0.05em" }}>
             {" "}
             What makes alpha mode unique?
           </h1>
@@ -162,9 +164,9 @@ const Mobilefaq = () => {
         />
       </div>
 
-      <div className="flex gap-5 justify-center px-4 py-5 mt-4 w-full text-xs leading-5 text-white border border-solid border-white border-opacity-10 max-w-[354px]">
+      <div className="flex gap-5 justify-center px-4 py-5 mt-4 w-full text-xs leading-5 text-white border border-solid border-white border-opacity-20 max-w-[354px]">
         <div className="my-auto w-[243px]">
-          <h1 style={{ letterSpacing: "0.5em" }}>
+          <h1 style={{ letterSpacing: "0.05em" }}>
             {" "}
             Can anyone launch a project in Degan Mode?
           </h1>
@@ -176,9 +178,9 @@ const Mobilefaq = () => {
         />
       </div>
 
-      <div className="flex gap-5 justify-center px-4 py-5 mt-4 w-full text-xs leading-5 text-white border border-solid border-white border-opacity-10 max-w-[354px]">
+      <div className="flex gap-5 justify-center px-4 py-5 mt-4 w-full text-xs leading-5 text-white border border-solid border-white border-opacity-20 max-w-[354px]">
         <div className="my-auto w-[243px]">
-          <h1 style={{ letterSpacing: "0.5em" }}>
+          <h1 style={{ letterSpacing: "0.05em" }}>
             {" "}
             What types of project can apply for Alpha Mode?
           </h1>
@@ -190,10 +192,10 @@ const Mobilefaq = () => {
         />
       </div>
 
-      <div className="flex gap-5 justify-center px-4 py-5 mt-4 w-full text-xs leading-5 text-white border border-solid border-white border-opacity-10 max-w-[354px]">
+      <div className="flex gap-5 justify-center px-4 py-5 mt-4 w-full text-xs leading-5 text-white border border-solid border-white border-opacity-20 max-w-[354px]">
         <div className="my-auto w-[243px]">
           <h1>
-            <span style={{ letterSpacing: "0.01em" }}>
+            <span style={{ letterSpacing: "0.05em" }}>
               How deos TokentLaunch.pro support projects in Degan Mode?{" "}
             </span>
           </h1>
