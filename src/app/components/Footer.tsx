@@ -191,8 +191,8 @@ const Mobilefooter = () => {
           />
         </div>
       </div>
-
-      <div className="flex gap-5 items-start mt-7 w-full ">
+      {/* hello */}
+      <div className="flex gap-5  items-start mt-7 w-full ">
         <div className="flex flex-col justify-center items-center grow shrink-0 px-5 mt-2 basis-0 w-fit">
           {/* <div className="text-xl text-white flex flex-row">
             <h1>Generate</h1>
