@@ -166,9 +166,9 @@ const Mobiletheory = () => {
         <br />
       </div>
 
-      <div className="justify-center self-center w-fit mx-auto px-6 py-4 mt-2 text-xs font-bold text-lime-300 border border-lime-300 border-solid">
+      {/* <div className="justify-center self-center w-fit mx-auto px-6 py-4 mt-2 text-xs font-bold text-lime-300 border border-lime-300 border-solid">
         Read More
-      </div>
+      </div> */}
     </div>
   );
 };

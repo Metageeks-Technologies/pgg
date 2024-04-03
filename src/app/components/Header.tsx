@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
   const [showGamesMenu, setShowGamesMenu] = useState(false);
@@ -15,6 +15,24 @@ const Header = () => {
     setShowLaunchpadMenu(!showLaunchpadMenu);
   };
 
+  const openMobile = () => {
+    setIsOpen(true);
+  };
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    // Cleanup function to reset the overflow property when the component unmounts
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
+
   return (
     <div className="container p-0">
       <div className="flex gap-5 sm:gap-5 sm:justify-between items-center sm:px-8 max-md:py-5 max-md:px-5 w-full p-10 md:after:hidden">
@@ -28,17 +46,142 @@ const Header = () => {
             />
           </span>
         </a>
-        <div className="flex -ms-4 justify-start items-start px-0 sm:hidden">
-          <a href="/">
-            <span>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/a922751de765628a0b781d7eed3988a7a8198b0aed453cafdd1ab908f5521c98?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
-                className="shrink-0 w-10 border-[2px] border-solid aspect-square border-white border-opacity-10 "
-              />
-            </span>
-          </a>
+        {/* mobile menu button */}
+        <div
+          onClick={openMobile}
+          className="flex -ms-4 justify-start items-start px-0 sm:hidden"
+        >
+          <span>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a922751de765628a0b781d7eed3988a7a8198b0aed453cafdd1ab908f5521c98?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
+              className="shrink-0 w-10 border-[2px] border-solid aspect-square border-white border-opacity-10 "
+            />
+          </span>
         </div>
+        {/* mobile menu */}
+        {isOpen ? (
+          <div className="md:hidden flex justify-center overflow-y-hidden items-center fixed inset-0 bg-black h-[110vh] z-40">
+            <button
+              onClick={() => setIsOpen(false)}
+              className=" absolute top-8 right-8 "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="icon icon-tabler icon-tabler-x"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="#713fff"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+              </svg>
+            </button>
+            <ul className="flex gap-[4rem] justify-center text-zinc-600 items-center  flex-col font-bold  text-xl leading-5 ">
+              <a
+                href="/"
+                className="cursor-pointer hover:text-white font-bold hover:font-bold"
+              >
+                Home
+              </a>
+
+              <a
+                href="/"
+                className="cursor-pointer text-gray-500 hover:text-white hover:font-bold"
+              >
+                About
+              </a>
+
+              <div className="relative">
+                <div
+                  className="flex gap-1 cursor-pointer text-gray-500 hover:text-white group hover:font-bold"
+                  onClick={handleShowGamesMenu}
+                >
+                  Games
+                  <div className="shrink-0 opacity-500 my-auto w-3.5 aspect-square">
+                    <svg
+                      className="text-gray-500 group-hover:text-white group-hover:font-bold"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={14}
+                      height={14}
+                      fill="currentColor"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="m7.216 9.237 3.75-3.868c.235-.241.093-.702-.215-.702H3.249c-.308 0-.45.461-.216.702l3.75 3.868a.29.29 0 0 0 .433 0Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                {showGamesMenu && (
+                  <div className="absolute z-10 mt-2 w-32 bg-black  shadow-lg border  border-lime-400">
+                    <div className="">
+                      <a
+                        href="/games/action"
+                        className="block px-4 py-2 text-sm  transition-all duration-200 text-white hover:text-black hover:font-bold hover:bg-lime-300"
+                      >
+                        Action
+                      </a>
+                      <a
+                        href="/games/adventure"
+                        className="block px-4 py-2 text-sm transition-all duration-200 text-white hover:text-black hover:font-bold hover:bg-lime-300"
+                      >
+                        Adventure
+                      </a>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              <div className="relative">
+                <div
+                  className="flex gap-1 cursor-pointer text-gray-500 hover:text-white group hover:font-bold"
+                  onClick={handleShowLaunchpadMenu}
+                >
+                  Launchpad
+                  <div className="shrink-0 opacity-500 my-auto w-3.5 aspect-square">
+                    <svg
+                      className="text-gray-500 group-hover:text-white group-hover:font-bold"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={14}
+                      height={14}
+                      fill="currentColor"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="m7.216 9.237 3.75-3.868c.235-.241.093-.702-.215-.702H3.249c-.308 0-.45.461-.216.702l3.75 3.868a.29.29 0 0 0 .433 0Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                {showLaunchpadMenu && (
+                  <div className="absolute z-10 mt-2 w-fit bg-black  shadow-lg border  border-lime-400 justify-normal right-0">
+                    <div className="">
+                      <a
+                        href="/launchpad/1"
+                        className="block px-4 py-2 text-nowrap text-sm text-white hover:text-black hover:font-bold hover:bg-lime-300"
+                      >
+                        Launchpad 1
+                      </a>
+                      <a
+                        href="/launchpad/2"
+                        className="block px-4 py-2 text-nowrap text-sm text-white hover:text-black hover:font-bold hover:bg-lime-300"
+                      >
+                        Launchpad 2
+                      </a>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </ul>
+          </div>
+        ) : null}
         <div className=" gap-5 justify-between items-center text-base  text-white whitespace-nowra md:flex hidden">
           <a
             href="/home"

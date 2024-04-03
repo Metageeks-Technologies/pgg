@@ -261,6 +261,7 @@ const Desktopadvisor = () => {
 };
 
 const Mobileadvisor = () => {
+  const [isShow, setIsShow] = useState(false);
   return (
     <div>
       <div className="flex mt-10 justify-center items-center">
@@ -395,12 +396,109 @@ const Mobileadvisor = () => {
                 </div>
               </div>
             </div>
+            {isShow && (
+              <>
+                <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
+                  <div className="flex flex-col grow px-5 py-5 border border-solid border-white border-opacity-20 max-md:mt-5">
+                    <div className="flex flex-col justify-center bg-white">
+                      <img
+                        loading="lazy"
+                        srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/6275f9cabbaf9b54e886640ddc23eed5384b344697061cef51d8c1e9819db189?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/6275f9cabbaf9b54e886640ddc23eed5384b344697061cef51d8c1e9819db189?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6275f9cabbaf9b54e886640ddc23eed5384b344697061cef51d8c1e9819db189?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/6275f9cabbaf9b54e886640ddc23eed5384b344697061cef51d8c1e9819db189?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/6275f9cabbaf9b54e886640ddc23eed5384b344697061cef51d8c1e9819db189?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6275f9cabbaf9b54e886640ddc23eed5384b344697061cef51d8c1e9819db189?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/6275f9cabbaf9b54e886640ddc23eed5384b344697061cef51d8c1e9819db189?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/6275f9cabbaf9b54e886640ddc23eed5384b344697061cef51d8c1e9819db189?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
+                        className="w-full aspect-[1.25]"
+                      />
+                    </div>
+                    <div className="flex gap-5 justify-between mt-5">
+                      <div className="flex flex-col">
+                        <div className="text-xl font-bold leading-4 text-white">
+                          Justin
+                        </div>
+                        <div className="mt-2.5 text-xs leading-4 text-white text-opacity-30">
+                          Co-founder Maven Capital
+                        </div>
+                      </div>
+                      <a href="https://twitter.com/home">
+                        <button>
+                          <img
+                            loading="lazy"
+                            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
+                            className="shrink-0 self-start aspect-square w-[34px]"
+                          />
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
+                  <div className="flex flex-col grow px-5 py-5 border border-solid border-white border-opacity-20 max-md:mt-5">
+                    <div className="flex flex-col justify-center bg-white">
+                      <img
+                        loading="lazy"
+                        srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/14ba75663a74d321ef3451a466e1a193059edfdeba9d74bbb0d4665b9f417362?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/14ba75663a74d321ef3451a466e1a193059edfdeba9d74bbb0d4665b9f417362?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/14ba75663a74d321ef3451a466e1a193059edfdeba9d74bbb0d4665b9f417362?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/14ba75663a74d321ef3451a466e1a193059edfdeba9d74bbb0d4665b9f417362?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/14ba75663a74d321ef3451a466e1a193059edfdeba9d74bbb0d4665b9f417362?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/14ba75663a74d321ef3451a466e1a193059edfdeba9d74bbb0d4665b9f417362?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/14ba75663a74d321ef3451a466e1a193059edfdeba9d74bbb0d4665b9f417362?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/14ba75663a74d321ef3451a466e1a193059edfdeba9d74bbb0d4665b9f417362?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
+                        className="w-full aspect-[1.25]"
+                      />
+                    </div>
+                    <div className="flex gap-5 justify-between mt-5">
+                      <div className="flex flex-col">
+                        <div className="text-xl font-bold leading-4 text-white">
+                          Evan Luthra
+                        </div>
+                        <div className="mt-2.5 text-xs leading-4 text-white text-opacity-30">
+                          Angel Investor
+                        </div>
+                      </div>
+                      <a href="https://twitter.com/home">
+                        <button>
+                          <img
+                            loading="lazy"
+                            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
+                            className="shrink-0 self-start aspect-square w-[34px]"
+                          />
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
+                  <div className="flex flex-col grow px-5 py-5 border border-solid border-white border-opacity-20 max-md:mt-5">
+                    <div className="flex flex-col justify-center bg-white">
+                      <img
+                        loading="lazy"
+                        srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/18e9d874ac0e33697dad6930e40f6a1579aa0c2ee128f6234662cf55170123ce?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/18e9d874ac0e33697dad6930e40f6a1579aa0c2ee128f6234662cf55170123ce?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/18e9d874ac0e33697dad6930e40f6a1579aa0c2ee128f6234662cf55170123ce?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/18e9d874ac0e33697dad6930e40f6a1579aa0c2ee128f6234662cf55170123ce?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/18e9d874ac0e33697dad6930e40f6a1579aa0c2ee128f6234662cf55170123ce?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/18e9d874ac0e33697dad6930e40f6a1579aa0c2ee128f6234662cf55170123ce?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/18e9d874ac0e33697dad6930e40f6a1579aa0c2ee128f6234662cf55170123ce?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/18e9d874ac0e33697dad6930e40f6a1579aa0c2ee128f6234662cf55170123ce?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
+                        className="w-full aspect-[1.25]"
+                      />
+                    </div>
+                    <div className="flex gap-5 justify-between mt-5">
+                      <div className="flex flex-col">
+                        <div className="text-xl font-bold leading-4 text-white">
+                          Yash Dahenkar
+                        </div>
+                        <div className="mt-2.5 text-xs leading-4 text-white text-opacity-30">
+                          Founder of Acknoledger
+                        </div>
+                      </div>
+                      <a href="https://twitter.com/home">
+                        <button>
+                          <img
+                            loading="lazy"
+                            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/2b1d844b570a262863f05bde5663c65e288c741a81944414c39d2ff945c3d277?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
+                            className="shrink-0 self-start aspect-square w-[34px]"
+                          />
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
-      <div className="align-center justify-center flex">
+      <div
+        onClick={() => setIsShow((p) => !p)}
+        className="align-center justify-center flex"
+      >
         <div className="justify-center flex text-center w-[40%]  px-3 py-4 mt-8 text-xs font-bold text-lime-300 border border-lime-300 border-solid">
-          See More
+          {isShow ? "Show Less" : "Show More"}
         </div>
       </div>
     </div>
