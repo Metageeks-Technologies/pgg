@@ -40,3 +40,14 @@ body {
 h1 {
   font-family: 'Republica', sans-serif; 
 }
+
+@font-face {
+  font-family: 'ProFontWindows';
+  src: url('/fonts/ProFont.ttf') format('opentype');
+  font-style: normal;
+  font-display: swap;
+}
+
+.myfont {
+  font-family: 'ProFontWindows', sans-serif;
+}
